@@ -12,6 +12,7 @@ import {
   SimpleGrid,
   CircularProgress,
   CircularProgressLabel,
+  Image,
 } from "@chakra-ui/react";
 import "./index.css";
 
@@ -60,24 +61,31 @@ const Overview = () => {
               <Color color="yellow" />
               <Color color="green" />
             </Flex>
-            <Flex
-              alignItems="center"
-              justifyContent="center"
-              mt={4}
-              mb={2}
-              className="progressContainer"
-            >
-              <CircularProgress
-                value={44}
-                color="red"
-                size="120px"
-                thickness="12px"
+            <Flex justifyContent="space-between" alignItems="center">
+              <Image
+                height="200px"
+                width="100px"
+                src="https://images-cdn.ubuy.co.in/634e8c0df8957469547832b8-plush-figure-toys-owl-plush-doll-cute.jpg"
+              />
+              <Flex
+                alignItems="center"
+                justifyContent="center"
+                mt={4}
+                mb={2}
+                className="progressContainer"
               >
-                <CircularProgressLabel fontSize="md">
-                  Score <br />
-                  44%
-                </CircularProgressLabel>
-              </CircularProgress>
+                <CircularProgress
+                  value={44}
+                  color="red"
+                  size="120px"
+                  thickness="12px"
+                >
+                  <CircularProgressLabel fontSize="md">
+                    Score <br />
+                    44%
+                  </CircularProgressLabel>
+                </CircularProgress>
+              </Flex>
             </Flex>
           </Stack>
         </CardBody>
